@@ -22,7 +22,7 @@ def pick():
 
             if guess <= 100 and guess >= 1:  
                 guessesTaken = guessesTaken + 1  
-
+                 print("Wrong,This is your {guessesTaken} chance out of 5")
                 if guessesTaken < 5:
                     if guess < number:
                         print("The number that you have entered is too small")
@@ -54,6 +54,7 @@ playagain = "yes"
 while playagain == "yes" or playagain == "y" or playagain == "Yes":
     intro()
     pick()
+    print("******Game Over******)
     print("Do you want to play again?")
     playagain = input()
     if playagain=="no":
